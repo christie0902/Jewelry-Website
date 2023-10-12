@@ -10,22 +10,32 @@ body {
 
 .top_bar {
     display: flex;
-    justify-content: stretch;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Add padding for better spacing on smaller screens */
 }
 
 .logo {
-    margin-top: 30px;
-    margin-left: 36%;
+    flex: 1; /* Allow the logo to take available space in the middle */
+    text-align: center; /* Center the logo within its container */
+    margin-top: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
 }
 
 .cart {
-    margin-top: 35px;
+    margin-right: 10px; /* Add margin for better spacing */
     display: flex;
-    margin-left: 30%;
+    align-items: center;
 }
 
 .cart i {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .cart p {
@@ -35,60 +45,108 @@ body {
 .image {
     width: 50px;
     height: 50px;
-    border-radius: 50% 50%;
+    border-radius: 50%;
 }
 
 .name {
-    margin-left: auto;
-    margin-top: 35px;
+    margin-right: 10px; /* Add margin for better spacing */
 }
 
-.photo {
-    margin-left: 10px;
-    margin-top: 20px;
-    margin-right: 20px;
+/* Media query for smaller screens (adjust the max-width as needed) */
+@media (max-width: 768px) {
+    .logo {
+        text-align: center; /* Center the logo on smaller screens */
+    }
+    
+    .user-info {
+        flex-direction: column; /* Stack user info vertically on smaller screens */
+        align-items: center;
+    }
+
+    .cart {
+        margin: 10px 0; /* Adjust margin for better spacing on smaller screens */
+    }
+
+    .cart i {
+        margin-right: 5px;
+    }
+
+    .cart p {
+        font-weight: bold;
+    }
+
+    .name {
+        margin: 10px 0; /* Adjust margin for better spacing on smaller screens */
+    }
+}
+
+.navigation_bar {
+    display: flex;
+    justify-content: center; /* Center the navigation bar horizontally */
+    align-items: center;
+    min-height: 8vh;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    width: 100%; /* Occupy full width of the container */
+    padding: 0 20px; /* Add horizontal padding for better spacing */
+    justify-content: center;
 }
 
 .nav_links {
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    max-width: 60%;
     list-style: none;
 }
 
 .nav_links a {
     color:black;
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-weight: bold;
     font-size: 20px;
-    padding: 14px 16px;
+    padding: 10px 25px;
 }
+
+@media (max-width: 1050px) {
+    
+    
+    .nav_links {
+        max-width: 100%; /* Occupy full width on smaller screens */
+    }
+
+    .nav_links a {
+        padding: 10px; /* Adjust padding for better spacing on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .nav_links {
+        max-width: 100%; /* Occupy full width on smaller screens */
+    }
+
+    .nav_links a {
+        padding: 10px; /* Adjust padding for better spacing on smaller screens */
+    }
+}
+
+/*Hero section styles */
 
 .hero_section {
     display: flex;
     justify-content: center;
     background-color: rgb(245, 235, 222);
+    max-height: 480px;
 }
 
 
 .hero_container {
-    max-height: 482px;
+    max-height: 480px;
     overflow: hidden;
     display: inline-block;
-}
-
-.hero_container_big {
-    max-height: 482px;
-    display: inline-block;
-    overflow: hidden;
 }
 
 .text_left {
@@ -109,3 +167,14 @@ nav {
     margin-top: 10%;
 }
 
+.text_left button {
+    margin-top: 30px;
+    background-color: rgb(245, 235, 222);
+    border-color: black;
+    padding: 15px 32px;
+    font: inherit;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+    border-width: 1.8px;
+}
