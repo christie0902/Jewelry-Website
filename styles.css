@@ -357,3 +357,44 @@ nav {
         margin-bottom: 10px;
     }
 }
+
+/*Collection Section Style*/
+.collection_section h1 {
+    text-align: center;
+}
+
+.collection_photo {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.image_container {
+    margin: 50px;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+figure {
+    text-align: center;
+    font-size: larger;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+@media (max-width: 1250px) {
+.collection_photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.image_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+}
