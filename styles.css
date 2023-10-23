@@ -302,13 +302,15 @@ nav {
     font-weight: bold;
 }
 
-.product_set img {
+#product_set img {
     max-width: 100%;
     height: auto;
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
 }
 
-.product_set img:hover {
-    cursor:pointer;
+#product_set:hover {
+    transform: scale(0.9); /* Zoom in the image when hovered */
+    box-shadow: 0 0 6px rgba(33,33,33,.2);
 }
 
 @media (max-width: 1330px) {
@@ -372,6 +374,11 @@ nav {
     justify-content: center;
     max-width: 100%;
     margin-bottom: 100px;
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+}
+
+.image_container:hover {
+    transform: scale(1.1); /* Zoom in the image when hovered */
 }
 
 .image_container {
@@ -383,8 +390,12 @@ nav {
 figure {
     text-align: center;
     font-size: larger;
-    margin-top: 0;
+    margin-top: 0px;
     font-weight: bold;
+}
+
+figcaption {
+    margin-top: 10px;
 }
 
 @media (max-width: 1250px) {
