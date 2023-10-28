@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+/*  ⚠ for future reference - try to have more specific names for classes so that if you add pages later you don't accidentally reuse a name */ 
 
 body {
     font-family: 'Karla', sans-serif;
@@ -475,8 +476,10 @@ figcaption {
     font-size: 110%;
 }
 
+/* Here is where you should start adjusting you font sizes and buttons for smaller screens,
+ as only people with good eyes would be able to use it currently */
 /* Media query for smaller screens (max-width: 600px) */
-@media (max-width: 600px) {
+@media (max-width: 600px) { 
     .blog {
         grid-template-columns: repeat(1, 1fr); /* 1 column */
     }
@@ -548,3 +551,6 @@ footer p {
 footer img {
     padding-left: 10px;
 }
+
+/* Not required, but your site starts to break below a width of 220px. 
+If you want to accomodate smart watch browsers you can add more media queries to handle the small screen sizes */
