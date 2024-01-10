@@ -115,6 +115,7 @@ nav {
     padding: 10px 20px;
 }
 
+
 @media (max-width: 1050px) {
     
     
@@ -308,9 +309,35 @@ nav {
     transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
 }
 
-#product_set:hover {
-    transform: scale(0.9); /* Zoom in the image when hovered */
-    box-shadow: 0 0 6px rgba(33,33,33,.2);
+#product_set img:hover {
+    box-shadow: 0 0 15px rgba(33,33,33,.2);
+}
+
+.new-in-description {
+    max-width: 200px;
+    position: absolute;
+    opacity: 0;
+    margin-top: 10px;
+}
+
+.new-in-description button {
+    border: none;
+    background-color: white;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: 0;
+    font-size: 0.8em;
+    text-decoration:underline;
+    color:#D4AFAF
+}
+
+.new-in-description button:hover {
+    cursor: pointer;
+}
+
+.new-in-description-showed {
+    position: static;
+    opacity: 1;
 }
 
 @media (max-width: 1330px) {
