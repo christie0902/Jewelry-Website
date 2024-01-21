@@ -233,7 +233,8 @@ nav {
     align-content: center;
     text-align: left;
     padding-top: 2%;
-    margin: 30px;
+    margin-inline: auto;
+    width: 80vw;
 }
 
 
