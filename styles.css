@@ -13,12 +13,14 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px; /* Add padding for better spacing on smaller screens */
+    margin-bottom: 1rem;
 }
 
 .logo {
     flex: 1; /* Allow the logo to take available space in the middle */
     text-align: center; /* Center the logo within its container */
     margin-top: 10px;
+    object-fit: contain;
 }
 
 .user-info {
@@ -89,6 +91,7 @@ body {
     justify-content: center; /* Center the navigation bar horizontally */
     align-items: center;
     min-height: 8vh;
+    margin-bottom: 1rem;
 }
 
 nav {
